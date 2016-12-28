@@ -19,6 +19,18 @@
 	<li><a href="https://wiki.debian.org/BootUsb">Booting Debian from a flash drive</a></li>
 </ul></p>
 
+<h2>Interpreters</h2>
+<h3>Python</h3>
+<p>The Python interpreter can be installed many different ways.  Some common methods include a distribution's package manager (Linux), an <a href="https://www.python.org/">installer</a> (Windows and Mac), or as part of a package of bundled libraries and related software (multiple platforms).  Some of these packages include the following:
+<ul>
+<li><a href="https://www.continuum.io/anaconda-overview">Anaconda</a></li>
+<li><a href="http://conda.pydata.org/miniconda.html">Miniconda</a> (Starting with a base system and adding stuff as necessary makes it a smaller installation)</li>
+<li><a href="http://www.sagemath.org">Sage</a> (Some useful instructions for integrating Jupyter notebooks are found <a href="https://wiki.archlinux.org/index.php/SageMath#Jupyter_Notebook">here</a>.)</li>
+</ul></p>
+<h4>Package Managers &#38; Virtual Environments</h4>
+<p>Caution should be used when installing Python libraries within a Python installation that is used by (came with) the computer's operating system.  Additionally, avoid using conflicting package managers to install Python components (within practicality).  For example, <em>pip3</em> is a Python3 package manager, and <em>Apt</em> is a Linux system package manager.  The two do not know what each other has already installed or configured.  Installing Python packages with both managers in the same location could lead to a corrupted installation, a particular mess if the installation is also used by the operating system.  <em><a href="https://docs.python.org/3/library/venv.html">Virtual environments</a></em> are often used to keep library installations separated.  Anaconda/Miniconda use the <em>conda</em> package manager and the <em>myenv</em> option to create a virtual environment. (Please see the Miniconda page for more details.)
+</p>
+
 <h2>Editors &#38; IDE's</h2>
 <h3>Jupyter</h3>
 <p><ul>
