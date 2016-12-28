@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+ul.circle {
+    list-style-type: circle;
+}
+ul.square {
+    list-style-type: square;
+}
+th, td {
+    padding: 5px;
+}
+td.bar {
+	border-right-style: solid;
+}
