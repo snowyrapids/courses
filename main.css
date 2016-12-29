@@ -20,3 +20,7 @@ th, td {
 td.bar {
 	border-right-style: solid;
 }
+
+#code {
+	font-family: "Courier New", Courier, "Lucida Console", Monaco, monospace; 
+}
