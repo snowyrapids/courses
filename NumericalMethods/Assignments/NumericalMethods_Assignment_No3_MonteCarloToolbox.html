@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #3</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #3</h1>
+<h2>Monte Carlo Toolbox</h2>
+<p>This assignment must use Python 3 and the Jupyter notebook template provided below. Before submitting the assignment, verify that your program meets the following criteria:
+<ul>
+<li>Use a class & member methods/data to house your Monte Carlo integration code. (Data must be on the lowest scope practical; in other words, do not make variables like a function-level counter effectively "global" to the class by declaring it a class member variable).</li>
+<li>Use constructor methods to initialize the object upon instantiation.</li>
+<li>Use "setter" and "getter" methods to interface with member data from outside the object.  Include "set" and "get" in the names of such methods. Your integration method, however, can return the integral result to the calling statement outside the object.</li>
+<li>Use a Monte Carlo method from your class to accurately integrate the assigned equation(s) and print the result. This means that the method (i.e., a member function to a class) must use a random number generator; otherwise it wouldn't be a Monte Carlo method (meaning a numerical method). (The "random" library that should have been included with your installation would be a good place to look for one.) To obtain an accurate integration result, you will need a lot of random points; do not store them altogether in a variable (that could use a lot of memory).</li>
+<li>Make your Monte Carlo method as generic as possible so that you can use it with different equations.</li>
+<li>Allow the number of seed/Monte Carlo points to be set with the method parameters (in the function call).</li>
+<li>Use matplotlib to graph the original equation (noted below) and 100 Monte Carlo points together. This does not have to use a class method like the one you must use to accurately integrate the equation, as you might have to store the points in order to plot them. However, it should also print the (likely inaccurate) result so that it can be compared to the (hopefully) more accurate class method that you will have coded.</li>
+<li>Correct use of style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page), and well-named variables.</li>
+<li>No unnecessary or unused code.</li>
+<li>Your code must work correctly.</li>
+</ul>
+</p>
+
+<p>The accuracy must be to at least one decimal place.  The assigned integrals and equations to integrate are as follows:
+<ol>
+<li>$$\int_0^{\pi/2} cos(x)\,dx$$</li>
+<li>$$\int_0^{10} e^{-1/x}\,dx$$ </li>
+<li>With an interval of $\left[-\pi/2,10\right]$, 
+		$$\begin{cases} 
+      cos(x) & x\lt 0 \\
+      e^{-1/x} & 0\leq x 
+   \end{cases}$$</li>
+</ol>
+Only use equation 2 for the plotting requirement; you do not need to plot the other equations. </p>
+
+<p>The Jupyter notebook template for this assignment can be downloaded <a href="MonteCarlo_Template.ipynb">here</a>.  You will submit your completed notebook file to the appropriate drop-box in I-Learn.</p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
