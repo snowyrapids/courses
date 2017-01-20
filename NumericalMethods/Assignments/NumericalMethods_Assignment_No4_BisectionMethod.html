@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #4</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #4</h1>
+<h2>Bisection Method (Root-finding) Toolbox</h2>
+<p>This assignment must use Python 3 and the Jupyter notebook template provided below. Before submitting the assignment, verify that your program meets the following criteria:
+<ul>
+<li>Include a PDF file of your Top-Down Design diagram for your Bisection Method program with your Jupyter Notebook file in your assignment submission.  The diagram must be clearly written and use a "bubble" format, although you do not need to draw circles around your wording.</li>
+<li>Use a class & member methods/data to house your Bisection Method code. (Data must be on the lowest scope practical; in other words, do not make variables like a function-level counter effectively "global" to the class by declaring it a class member variable).</li>
+<li>Use constructor methods to initialize the object upon instantiation (if needed).</li>
+<li>Use "setter" and "getter" methods to interface with member data from outside the object.  Include "set" and "get" in the names of such methods. Your root-finding method, however, can return the result to the calling statement outside the object.  In other words, do not access member variables directly; access them through member methods (class member functions) instead.</li>
+<li>Use a Bisection method from your class to accurately find roots for the assigned equation(s) and print the results.</li>
+<li>Make your Bisection method as generic as possible so that you can use it with different equations.</li>
+<li>Allow the bracketing $x$-values of the Bisection method to be set with the method parameters (in the function call).</li>
+<li>Use the SymPy library to solve the appropriate equations.</li>
+<li>Correct use of style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page), and well-named variables.</li>
+<li>No unnecessary or unused code.</li>
+<li>Your code must work correctly.</li>
+</ul>
+</p>
+
+<h3>Using the Bisection Method</h3>
+<p>You might consider plotting the the first two equations with matplotlib to see where you should set the bracketing values for the Bisection Method. The result's accuracy must be to at least four decimal places.  The assigned equations and associated roots to solve for are as follows:
+<ol>
+<li>Find both roots of the quadratic equation $$x^2=\frac{4}{3}x + \frac{5}{9}$$</li>
+<li>Find the first positive root of $cos(x)$</li>
+<li>Find the friction factor $f$ in the Colebrook-White equation $$\frac{1}{\sqrt{f}}=-2 log\left(\frac{\varepsilon}{3.7D_h}+\frac{2.51}{Re\sqrt{f}}\right),$$ with the following values:<ul>
+	<li>$\varepsilon$ = 1.5e-4</li>
+	<li>$D_h$ = 0.315</li>
+	<li>$Re$ = 6000</li>
+	</ul></li>
+</ol>
+</p>
+
+<h3>Solving symbolically with SymPy</h3>
+<p>For this portion of the assignment, use the appropriate solver in the SymPy library (<em>hint: it's not "solve"</em>) to symbolically find $x$ in the following equations:
+<ol>
+<li>Equation # 1 (the quadratic equation) listed for the Bisection Method portion above</li>
+<li>The quadratic equation $$0=a x^2 + b x + c.$$  Note that you should obtain both parts of the quadratic formula for your answer.</li>
+</ol></p>
+
+<p>The Jupyter notebook template for this assignment can be downloaded <a href="Bisection_Template.ipynb">here</a>.  You will submit your completed notebook file to the appropriate drop-box in I-Learn.</p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
