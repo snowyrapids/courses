@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #5</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #5</h1>
+<h2>Secant Method (Root-finding) Toolbox</h2>
+<p>This assignment must use Python 3 and the Jupyter notebook template provided below. Before submitting the assignment, verify that your program meets the following criteria:
+<ul>
+<li>Include a PDF file of your Top-Down Design diagram for your Secant Method program with your Jupyter Notebook file in your assignment submission.  The diagram must be clearly written and use a "bubble" format, although you do not need to draw circles around your wording.</li>
+<li>Use a class & member methods/data to house your solver's code. (Data must be on the lowest scope practical; in other words, do not make variables like a function-level counter effectively "global" to the class by declaring it a class member variable).</li>
+<li>Use constructor methods to initialize the object upon instantiation (if needed).</li>
+<li>Use "setter" and "getter" methods when you access member data from outside the object.  Include "set" and "get" in the names of such methods. Your root-finding method, however, can return the result to the calling statement outside the object.  In other words, do not access member variables directly; access them through member methods (class member functions) instead.</li>
+<li>Use a secant method from your class to accurately find roots for the assigned equation(s) and print the results.</li>
+<li>Make your secant method as generic as possible so that you can use it with different equations <em>without having to create a new solver object</em>.</li>
+<li>Allow the initial guesses of the secant method to be set with the method parameters (in the function call).</li>
+<li>Correct use of style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page), and well-named variables.</li>
+<li>No unnecessary or unused code.</li>
+<li>Your code must work correctly.</li>
+</ul>
+</p>
+
+<h3>Using the Secant Method</h3>
+<p>You might consider plotting the equations with matplotlib to see where you should set the initial values for the Secant Method. The result's accuracy must be to at least <em>six</em> decimal places.  The assigned equations and associated roots to solve for are as follows:
+<ol>
+<li>Find the positive zero of the polynomial $$x^5-2 x^2 -4$$</li>
+<li>Find the <em>second</em> positive root of $cos(x)$</li>
+<li>Find the friction factor $f$ in the Colebrook-White equation $$\frac{1}{\sqrt{f}}=-2 log\left(\frac{\varepsilon}{3.7D_h}+\frac{2.51}{Re\sqrt{f}}\right),$$ with the following values:<ul>
+	<li>$\varepsilon$ = 1.5e-4</li>
+	<li>$D_h$ = 0.315</li>
+	<li>$Re$ = 6000</li>
+	</ul></li>
+</ol>
+</p>
+
+<p>The Jupyter notebook template for this assignment can be downloaded <a href="Secant_Template.ipynb">here</a>.  You will submit your completed notebook file to the appropriate drop-box in I-Learn.</p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
