@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #6</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #6</h1>
+<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>
+<h2>Ridders' Method (Root-finding) Toolbox</h2>
+<p>This assignment requires that you use <em>HTML5</em> (JavaScript, HTML, & CSS) to program Ridders' Method. Before submitting the assignment, remember to verify that your program meets the following criteria:
+<ul>
+<!--<li>Include a PDF file of your Top-Down Design diagram for your Ridders' Method program with your Jupyter Notebook file in your assignment submission.  The diagram must be clearly written and use a "bubble" format, although you do not need to draw circles around your wording.</li>-->
+<li>Use a class (a "prototype" in JavaScript) & member methods/data to house your solver's code.<!-- (Data must be on the lowest scope practical; in other words, do not make variables like a function-level counter effectively "global" to the class by declaring it a class member variable)-->  Also use an object to hold the current equation that you are solving; pass the equation object as a parameter to your solver method.</li>
+<li>Use "setter" and "getter" methods when you access member data from outside the <em>root-finder object</em>.  Include "set" and "get" in the names of such methods. Your root-finding method, however, can return the result to the calling statement outside the object.  In other words, do not access member variables directly; access them through member methods (class member functions) instead.  <em>However, try to avoid having to access member data from outside the object in the first place!</em></li>
+<li>Use Ridders' method from your prototype to accurately find roots for the assigned equation(s) and display the results.</li>
+<li>Make your root-finding method as generic as possible so that you can use it with different equations <em>without having to create a new solver object</em>.</li>
+<li>Allow the initial bracket values of Ridders' method to be set with the method parameters (in the function call).</li>
+<li>Correct use of style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
+<li>No unnecessary or unused code.</li>
+<li>Your code must work correctly.</li>
+<li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
+</ul>
+</p>
+
+<h3>Using Ridders' Method</h3>
+You will submit an HTML document (with the ".html" extension) for this assignment.  Create a separate section of the page for each of the following tasks; use headings, horizontal rulers, etc. as needed. 
+<h2>Task #1</h2>
+<p>Your name must be displayed at the top of the page.</p>
+
+<h2>Task #2</h2>
+<p>Use your root-finder object to solve each of the following equations.  Each equation should be in its own section.  Each equation section must have its own "Solve" button.  Remember that the user might want to solve an equation again after changing the input parameters; <em>this should be permitted without having to reload the page</em>.</p>
+<p>The default accuracy must be to at least <em>4</em> decimal places.  User input/parameters must be entered through input boxes; the default values must be displayed. The equation being solved must be included and rendered in its corresponding section using LaTeX and MathJax.  Your web page must work in both Chrome/Chromium and Firefox.  Remember that you will be submitting only <em>one</em> file.</p>  
+
+<h3>Task #2.1</h3>
+<p>Find the positive zero of the polynomial $$x^5-2 x^2 -4.$$  User parameters (entered through input boxes) are the root-finder brackets, the absolute error, and the maximum iterations allowed.  Remember to display the default values for these as well.</p>
+
+<h3>Task #2.2</h3>
+<p>Find the <em>second</em> positive root of $cos(x)$.  The user requirements are the same as the previous task.</p>
+
+<h3>Task #2.3</h3>
+<p>Find the friction factor $f$ in the Colebrook-White equation $$\frac{1}{\sqrt{f}}=-2 log\left(\frac{\varepsilon}{3.7D_h}+\frac{2.51}{Re\sqrt{f}}\right).$$ In addition to including the user parameters of the previous sections, also provide input boxes for the following parameters with their associated default values:<ul>
+	<li>$\varepsilon$ = 1.5e-4</li>
+	<li>$D_h$ = 0.315</li>
+	<li>$Re$ = 6000</li>
+	</ul></li>
+</ol>
+</p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
