@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #7</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #7</h1>
+<!--<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>-->
+<h2>Solving Simultaneous Equations</h2>
+<p>This assignment will have two parts.  You will do each part in <em>both</em> HTML5 and Python 3.  Use the provided Jupyter Notebook template for your Python code and an HTML file for your HTML5 code.  You will, therefore, be submitting both files to I-Learn wrapped in one zip file.  The Jupyter notebook template for the Python portion of this assignment can be downloaded <a href="SimultaneousEquations_Template.ipynb">here</a>.</p>
+
+<h3>Part 1: Solving Simultaneous Equations with $A x = B$</h3>
+<p>The system of equations you will solve for this part of the assignment is 
+$$\begin{cases} 
+      x + y - z = 7 \\
+      4x - y + 5z = 4 \\
+      2x + 2y - 3z = 0 
+   \end{cases}$$ <!-- #5, pp. 331--></p>
+
+<h4>Using HTML5</h4>
+<p>Use a <a href="http://mathjs.org/">Math.js</a> function to invert and multiply the arrays/matrices. (Note that Math.js is different from the built-in Math library in JavaScript, even though they have similar names.)  Source the minified version at "https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.9.1/math.min.js" in your HTML head section (between the "&lt;head&gt;&lt;/head&gt;" tags.</p>
+<p>Display the original system of equations using MathJax and LaTeX.  Trigger your JavaScript code using a button, and display the results.</p>
+
+<h4>Using Python 3</h4>
+<p>Display the equations being solved using a markdown cell.  Use NumPy arrays and functions to invert and multiply your matrices.  Also display the results.</p>
+
+<h3>Part 2: Solving Non-Linear Simultaneous Equations With a Gauss-Seidel Method</h3>
+<p>Solve the following non-linear system of equations to an accuracy of 4 decimal places using an iterative Gauss-Seidel method wrapped in a loop:
+$$\begin{cases} 
+      x = \sqrt{\frac{120-y}{8}} \\
+      y = x^3-1 
+   \end{cases}$$
+Look in the Other Professors' Resources on the class website for more help.
+</p>
+
+<h4>Using HTML5</h4>
+<p>Display the original equations using MathJax and LaTeX. The user should be able to specify the initial guesses, maximum number of iterations, and absolute error using input boxes; the input boxes should supply default values that will solve the equations.  Trigger your JavaScript code using a button, and display the results.</p>
+
+<h4>Using Python 3</h4>
+<p>Display the equations being solved using a markdown cell.  Specify the initial guesses, maximum number of iterations, and the absolute error using variables at the beginning of your code cell.  Display the results.</p>
+
+<h3><em>Also</em> be certain that in your assignment you...</h3>
+<p><ul>
+<li>Separate Part 1 and Part 2 visually with headings and lines as needed in your rendered html page.</li>
+<li>Correctly use style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
+<li>Remove unnecessary or unused code.</li>
+<li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
+</ul></p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
