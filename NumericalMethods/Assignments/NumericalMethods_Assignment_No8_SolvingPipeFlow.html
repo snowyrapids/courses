@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #8</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #8</h1>
+<!--<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>-->
+<h2>Engineering Application: Solving Simultaneous Equations in Pipe Flow Calculations</h2>
+<p>This assignment will be done only in HTML5 (HTML, CSS, &amp; JavaScript).  You will use your Ridders' Method toolbox and your Gauss-Seidel code from your previous assignments to solve the required equations behind an HTML user interface.</p>
+
+<p>The equations and description of the pipe-flow problem are found in <em>study_guide_U2_day3.pdf</em> on the Math &amp; Numerical Methods Resources &mdash;> Other Professors' Resources page.  Look for the boxed equations; you will need to solve them simultaneously using the Gauss-Seidel method, just as you did for the non-linear simultaneous equations of your previous assignment.  Also notice that the friction factor $f$ must be solved for using a root finder; you will use Ridders' Method for this step.</p>
+
+<p>The task includes the following requirements:
+<ul>
+<li>Use a radio button that allows the user to determine which variable is being solved for, the volumetric flow-rate $\dot{V}$ or the diameter $D$.</li>
+<li>All variable values must be taken from user-input boxes (e.g., $P_1$ &amp; $P_2$, not just those being solved for).  In addition to the variables in the equations, you must also allow the user to specify the initial guesses for $\dot{V}$ and $D$, the bounds for the Ridders' Method function, the separate maximum iterations for the Gauss-Seidel and Ridders' Method solvers, and the relaxation factors for all equation variables being updated in the Gauss-Seidel loop (not just $\dot{V}$ and $D$).</li>
+<li>As there will be many input boxes, you must organize the user-interface layout in a logical manner to make it user-friendly.  Use descriptions as necessary.</li>
+<li>Your solver code must be contained in a separate &amp; adjacent (in the same folder) JavaScript file.  Your other script functions can also be stored in the JS file as desired.  Do not forget to place both the HTML and the JS files together in the same zip file.</li>
+<li>Your web page must include default values in all of the input boxes.  Use the values provided by the homework problem located at the end of the aforementioned PDF file.  For the relaxation factors, set the defaults to the values that give you the lowest number of iterations in your solvers (i.e., that make your code converge the fastest).</li>
+<li>The solver code must be started when the user clicks a solve button button (as has been done in the previous assignments).</li>
+<li>The results must be clearly displayed on the web page along with the number of iterations performed by the Gauss-Seidel process and the maximum number of iterations used by the Ridders' Method (out of all the times it was called; hint: simply store the maximum count in a variable until needed).</li>
+</ul></p>
+
+<h3><em>Also</em> be certain that in your assignment you...</h3>
+<p><ul>
+<li>Submit your assignment as a zip file.</li>
+<li>Correctly use style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
+<li>Remove unnecessary or unused code.</li>
+<li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
+</ul></p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
