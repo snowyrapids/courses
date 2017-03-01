@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>About the Watch</h1>
+<p id="demo"></p>
+
+
+<h1>About Fred</h1>
+<p id="aboutFred"></p>
+
+
+
+
+<script>
+// Watch code
+var watch = {
+	color: "blue",
+	size: 5,
+	time: [13,26,36]
+}
+watch.incSec = function(){
+	this.time[2] += 1;
+}
+watch.incSec();
+document.getElementById("demo").innerHTML = watch.time[2];
+
+//Person code
+function Person(){
+	this.eyeColor = "blue";
+	this.hasWatch = false;
+	this.putOnWatch = function(aWatch){
+		this.watch = aWatch;
+		this.hasWatch = true;
+	};	
+}
+
+var fred = new Person();
+fred.putOnWatch(watch);
+document.getElementById("aboutFred").innerHTML = fred.hasWatch
+	+ " " + fred.watch.color;
+	
+//document.getElementById("aboutFred").innerHTML = 
+fred.watch.size = 10;
+fred.watch.incSec();
+document.getElementById("demo").innerHTML = watch.time;
+
+</script>
+</body>
+</html>
+
