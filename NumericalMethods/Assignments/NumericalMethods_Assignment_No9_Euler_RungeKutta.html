@@ -25,7 +25,7 @@
 <h1>Numerical Methods Assignment #9</h1>
 <!--<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>-->
 <h2>Solving ODE's with Euler and Runge-Kutta Methods</h2>
-<p>This assignment will be done only in Python 3 with Jupyter-Notebook.  You will use the template provided <a href="ODE_template.ipynb">here</a>.</p>
+<p>This assignment will be done only in Python 3 with a Jupyter-Notebook.  You will use the template provided <a href="ODE_template.ipynb">here</a>.</p>
 
 <p>You will create an ODE toolbox with a class; it must contain a member function/method for both the Euler's Method and the 4th order Runge-Kutta Method.  The differential equation's function (everything on the right-hand-side of the $\frac{dy}{dx}=f(x,y)$) must be passed as an object parameter to the Euler and Runge-Kutta methods along with any other pertinent parameters.  You must preserve code encapsulation by instantiating the ODE toolbox only once for the entire assignment and by avoiding outside alteration of the <em>toolbox's</em> member data (either directly or through getter/setter functions).</p>
 
@@ -33,12 +33,16 @@
 
 <p>The assigned ODE that you must solve is as follows:
 <ul>
-<li>$\frac{dy}{dx}=$<em>++++++ Place the Equation Here ++++++</em></li>
-<li>$x_0=$</li>
-<li>$x_f=$</li>
-<li>$y_0=$</li>
-<li>The number of steps is 10</li>
+<li>$\frac{dy}{dx} + 2 y + e^{-4x}= 2$</li>
+<li>$x_0=0$</li>
+<li>$x_f=2$</li>
+<li>$y_0=1$</li>
+<li>The number of steps is 40</li>
 </ul></p>
+
+<p>Allow the y-axis on your plot to zoom in enough that the differences between the methods are seen.  The automatic zoom appears to be sufficient, allowing the y-axis to range from 0.84 to 1.0.  Plot the 4th-Order Runge-Kutta results as markers instead of a continuous line, and make the Euler results a dashed line.</p>
+
+<p>Conceptual Note: Notice how the accuracy of the numerical methods is reduced in the area that the solution changes more quickly.  The accuracy is higher when the solution does not change so much.  How does a fixed step size influence this?</p>
 
 <h3><em>Also</em> be certain that in your assignment you...</h3>
 <p><ul>
