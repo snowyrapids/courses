@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #10</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #10</h1>
+<!--<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>-->
+<h2>Solving Multiple ODE's with the Runge-Kutta Method</h2>
+<p>This assignment will be done only in Python 3 with a Jupyter-Notebook.  You will use the template provided <a href="MultiODE_template.ipynb">here</a>.</p>
+
+<p>You will create an ODE toolbox with a class; it must contain a member function of the 4th order Runge-Kutta Method that is capable of solving two 1st order differential equations simultaneously.  The differential equations' functions must be encapsulated together (two equation methods in one object) within an equation object that will be passed as a parameter to the Runge-Kutta method along with any other pertinent parameters.  You must preserve code encapsulation by instantiating the ODE toolbox only once for the entire assignment and by avoiding outside alteration of the <em>toolbox's</em> member data (either directly or through getter/setter functions).</p>
+
+<p>After solving the ODE's with the 4th-Order Runge-Kutta method, you must plot their respective solutions against the independent variable using <em>matplotlib</em>.  Your plot must additionally contain a legend and appropriate axes titles.</p>
+
+<p>The assigned ODE's that your code must correctly solve simultaneously are as follows:
+<ul>
+<li>$\frac{dx}{dt}=-0.5 x + y t$</li>
+<li>$\frac{dy}{dx}=4-0.1 x -0.2 y$</li>
+<li>$x(0)=1$</li>
+<li>$y(0)=2$</li>
+<li>$t$ ranges from 0 to 2</li>
+<li>The number of steps is 15</li>
+</ul>
+
+Print the results of $x(t_{final})$ and $y(t_{final})$ in the appropriate code cell after running your solver.  Be certain to check your results with either your hand calculations or another software package.
+</p>
+
+<h3><em>Also</em> be certain that in your assignment you...</h3>
+<p><ul>
+<!--<li>Submit your assignment as a zip file.</li>-->
+<li>Correctly use style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
+<li>Remove unnecessary or unused code.</li>
+<li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
+</ul></p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
