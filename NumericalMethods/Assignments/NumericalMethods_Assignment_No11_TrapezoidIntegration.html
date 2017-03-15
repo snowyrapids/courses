@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Numerical Methods Assignment #11</title>
+
+<!-- MathJax stuff -->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+<!-- End of MathJax stuff -->
+
+<link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+<body>
+
+<h1>Numerical Methods Assignment #11</h1>
+<!--<p>Caution: Carefully read and observe all of the assignment instructions so that you do not lose points for missed requirements.</p>-->
+<h2>Integrating with the Trapezoid Method</h2>
+<p>This assignment will be done only in Python 3 with a Jupyter-Notebook.  You will use the template provided <a href="Trapezoid_template.ipynb">here</a>.</p>
+
+<p>You will create an integration toolbox with a class; it must contain a member method that integrates an equation object (passed as a parameter) using the Trapezoid Numerical Method.  You must preserve code encapsulation by instantiating the integration toolbox only once for the entire assignment and by avoiding outside alteration of the <em>toolbox's</em> member data (either directly or through getter/setter functions).</p>
+
+<h2>The Scenario...</h2>
+<p>During a laboratory experiment, a meter records power levels and their associated times, storing them in a text file.  Part-way into the experiment, the meter fails.  The experiment engineer has determined that the power levels during the downtime are best estimated by the equation given hereafter.  After the meter resumes monitoring the experiment, it records the power levels in a step-data format and writes them to a CSV file.</p>
+
+<p>To obtain the total energy involved in the experiment, you must integrate all of the data.  Although you must print out the integrals of the individual pieces (for grading purposes), you must also integrate the entire experiment with only one call to your trapezoid method, your time bounds being the beginning and end of the entire experiment.  (In other words, you <em>cannot</em> simply add the three integrated sections to obtain the total.)  In doing this, your equation object must contain supporting methods to its main equation method that handle the three separate pieces of the experiment.  When printing the individual pieces, change the time bounds in your trapezoid method call.</p>
+
+<p>In summary, the power levels for the three experiment sections are given as follows:
+<ul>
+<li>For 0 &le; t < 4 days-22 hours-37 min., power levels are given in the linear data <a href="">text file</a></li>
+<li>For ... &le; t < restart time, the equation is... </li>
+<li>For t &ge; restart time, use the <a href="">CSV step data</a></li>
+</ul>
+
+</p>
+
+<h3><em>Also</em> be certain that in your assignment you...</h3>
+<p><ul>
+<!--<li>Submit your assignment as a zip file.</li>-->
+<li>Correctly use style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
+<li>Remove unnecessary or unused code.</li>
+<li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
+</ul></p>
+
+<p><br/>Copyright &copy; 2017 by S. Cooley</p>
+</body>
+</html>
