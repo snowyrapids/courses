@@ -33,13 +33,13 @@
 <h2>The Scenario...</h2>
 <p>During a laboratory experiment, a meter records power levels and their associated times, storing them in a text file.  Part-way into the experiment, the meter fails.  The experiment engineer has determined that the power levels during the downtime are best estimated by the equation given hereafter.  After the meter resumes monitoring the experiment, it records the power levels in a step-data format and writes them to a CSV file.</p>
 
-<p>To obtain the total energy involved in the experiment, you must integrate all of the data.  Although you must print out the integrals of the individual pieces (for grading purposes), you must also integrate the entire experiment with only one call to your trapezoid method, your time bounds being the beginning and end of the entire experiment.  (In other words, you <em>cannot</em> simply add the three integrated sections to obtain the total.)  In doing this, your equation object must contain supporting methods to its main equation method that handle the three separate pieces of the experiment.  When printing the individual pieces, change the time bounds in your trapezoid method call.</p>
+<p>To obtain the total energy involved in the experiment, you must integrate all of the data.  Although you must print out the integrals of the individual pieces (for grading purposes), you must also integrate the entire experiment with only one call to your trapezoid method, your time bounds being the beginning and end of the entire experiment.  (In other words, you <em>cannot</em> simply add the three integrated sections to obtain the total.)  In doing this, your equation object must contain supporting methods to its main equation method that handle the three separate pieces of the experiment.  When printing the individual pieces, change the time bounds in your trapezoid method call.  Your integration step size is 15 minutes and must be specified through a variable passed as a parameter to your integration method.</p>
 
 <p>In summary, the power levels for the three experiment sections are given as follows:
 <ul>
-<li>For 0 &le; t < 4 days-22 hours-37 min., power levels are given in the linear data <a href="">text file</a>.  (You must use the text file reader.)</li>
-<li>For ... &le; t < restart time, the equation is... $\frac{1}{5} sin\left(\frac{\pi}{12}\left(t+15\right)\right)+\frac{3}{5}$</li>
-<li>For t &ge; restart time, use the <a href="">CSV step data</a>. (You must use the CSV module's reader.)</li>
+<li>For 0 &le; t &le; 72 hours, power levels are given in the linear data <a href="supportingFiles/linearData.txt">text file</a>.  (You must use the text file reader.)</li>
+<li>For 72 hours < t < 96 hours, the equation is... $\frac{1}{5} sin\left(\frac{\pi}{12}\left(t+15\right)\right)+\frac{3}{5}$</li>
+<li>For 96 hours &le; t &le; 9 days, use the <a href="supportingFiles/stepData.csv">CSV step data</a>. (You must use the CSV module's reader.)  Note that time zero in the step data file is 96 hours absolute time.  For each $\Delta t$ in the step data, the corresponding power level was the average power level during that time period.</li>
 </ul>
 
 </p>
@@ -47,6 +47,7 @@
 <h3><em>Also</em> be certain that in your assignment you...</h3>
 <p><ul>
 <!--<li>Submit your assignment as a zip file.</li>-->
+<li>Read in the data files only once each and <em>do not alter their original names</em>.  You cannot access the files multiple times in your assignment.  When submitting your assignment, only submit your Jupyter notebook file.  If you have not altered the original file names, then your notebook will read the grader's data files.</li>
 <li>Correctly use style (see the style guide link on the Language Resources page), adequate commenting (see the commenting link on the Language Resources page; don't forget class and function comment blocks), and well-named variables.</li>
 <li>Remove unnecessary or unused code.</li>
 <li>Name your submission file according to the naming convention on the Numerical Methods Assignments page.</li>
