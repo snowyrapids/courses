@@ -1,0 +1,6 @@
+execute chmod +x myScript.sh
+
+
+
+use "ls -lh" to list files & directories virtically
+
